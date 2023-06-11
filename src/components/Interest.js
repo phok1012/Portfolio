@@ -15,7 +15,7 @@ const Interest = () => {
         </div>
         <div className="carousel-inner">
           { InterestData.map((interest, index) =>
-            <div class={ index === 0 ? 'carousel-item active' :'carousel-item'}>
+            <div className={ index === 0 ? 'carousel-item active' :'carousel-item'}>
               <div className="img-container">
                 <img src={interest.image} className="d-block img-thumbnail" alt="#"/>
                 <div className='int-overlay'>
@@ -31,8 +31,8 @@ const Interest = () => {
           <span className="visually-hidden">Previous</span>
         </button>
         <button className="carousel-control-next" type="button" data-bs-target="#interestCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </div>
@@ -40,16 +40,3 @@ const Interest = () => {
 }
 
 export default Interest
-
-
-
-
-
-{/* <button class="carousel-control-prev" type="button" data-bs-target="#interestCarousel" data-bs-slide="prev">
-<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#interestCarousel" data-bs-slide="next">
-<span class="carousel-control-next-icon" aria-hidden="true"></span>
-<span class="visually-hidden">Next</span>
-</button> */}

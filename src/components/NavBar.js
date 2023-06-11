@@ -35,8 +35,12 @@ const NavBar = () => {
             <a href="https://github.com/phok1012" target ='_blank'>
               <Github size='30' className='clickable px-1' />
             </a> |
-            <Linkedin size='30' className='clickable px-1'/> |
-            <FilePersonFill size='30' className='clickable  px-1'/> |
+            <a href="https://www.linkedin.com/in/kevinpho/" target ='_blank'>
+              <Linkedin size='30' className='clickable px-1'/>
+            </a> |
+            <a href="https://github.com/phok1012/Portfolio/raw/main/KevinPhoSoftwareResume.pdf" target ='_blank'>
+              <FilePersonFill size='30' className='clickable  px-1'/>
+            </a> |
             kevinpho1012@gmail.com | (626)-278-0277
           </span>
         </div>
