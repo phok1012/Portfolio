@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #344e6c;
+}
+
+.clickable {
+  transition: 1s ease-in-out;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  width: 40;
+  height: 40;
+}

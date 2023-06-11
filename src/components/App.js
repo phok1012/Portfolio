@@ -1,24 +1,20 @@
 import React, {useState} from 'react';
 import NavBar from './NavBar';
-import Home from './Home';
+import About from './About';
+import Skills from './Skills';
 import Projects from './Projects';
-import Contact from './Contact';
+import Interest from './Interest';
 
 
 const App = () => {
-  const [page, setPage] = useState('Home')
-
   return (
-    <div>
-      <NavBar setPage={setPage} />
-      <div>
-      {
-        {
-          'Home': <Home />,
-          'Projects': <Projects />,
-          'Contact':<Contact />
-        }[page]
-      }
+    <div className='container'>
+      <NavBar />
+      <div className='row'>
+        <About />
+        <Skills />
+        <Projects />
+        <Interest />
       </div>
     </div>
   );

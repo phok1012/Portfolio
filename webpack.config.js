@@ -20,12 +20,11 @@ module.exports = {
         rules: [
             {
               test: /\.css$/,
-              use: {
-                loader:[
-                  'style-loader',
-                  'css-loader'
-                ]
-              }
+              use: [
+                'style-loader',
+                'css-loader'
+              ]
+
             },
             {
               test: /\.js$/,
@@ -36,7 +35,15 @@ module.exports = {
                       presets: ['@babel/preset-env', '@babel/preset-react']
                       }
               }
-            }
+            },
+            {
+              test: /\.(png|jpe?g|gif)$/i,
+              use: [
+                {
+                  loader: 'file-loader',
+                },
+              ],
+            },
         ]
     }
 
