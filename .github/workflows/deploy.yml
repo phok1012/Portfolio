@@ -21,12 +21,9 @@ jobs:
 
     - name: Install dependencies
       uses: bahmutov/npm-install@v1
+      
+    - name: deploy
+      run: npm start
         
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    
-    steps:
-      -name:
+
 
