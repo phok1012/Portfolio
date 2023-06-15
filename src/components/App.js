@@ -4,6 +4,7 @@ import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 import Interest from './Interest';
+import '../css/App.css';
 
 
 const App = () => {

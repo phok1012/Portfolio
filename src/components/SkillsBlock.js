@@ -1,6 +1,4 @@
 import React from 'react'
-import '../css/SkillsBlock.css';
-
 
 const SkillsBlock = ({name, icon}) => {
   return (

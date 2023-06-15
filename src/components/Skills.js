@@ -1,7 +1,6 @@
 import React from 'react'
 import SkillsBlock from './SkillsBlock';
 import SkillsData from '../data/SkillsData';
-import '../css/Skills.css';
 
 const Skills = () => {
   const keys = Object.keys(SkillsData)

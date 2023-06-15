@@ -1,11 +1,10 @@
 import React from 'react';
 import InterestBlock from './InterestBlock';
-import '../css/Interest.css';
 import InterestData from '../data/InterestData'
 
 const Interest = () => {
   return (
-    <div id='Interest' className='pb-5'>
+    <div id='Interests' className='pb-5'>
       <h1 className='text-center'>Interest</h1>
       <div id="interestCarousel" className="carousel slide">
         <div className="carousel-indicators">

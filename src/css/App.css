@@ -1,0 +1,23 @@
+@import './interest.css';
+@import './interestBlock.css';
+@import './NavBar.css';
+@import './Projects.css';
+@import './ProjectsBlock.css';
+@import './Skills.css';
+@import './SkillsBlock.css';
+@import './SocialMedia.css';
+
+
+:root {
+  --background-color: #575757;
+  --font-color: #dfdfdf;
+  --card-color: #c7ccb1;
+  --icons-color: #c7ccb1;
+  --navbar-color: #c7ccb1;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}

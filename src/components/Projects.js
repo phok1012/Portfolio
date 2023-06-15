@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjectsBlock from './ProjectsBlock'
-import '../css/Projects.css'
 import ProjectsData from '../data/ProjectsData'
 
 const Projects = () => {

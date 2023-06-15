@@ -1,5 +1,4 @@
 import React from 'react';
-import '../css/InterestBlock.css';
 
 const InterestBlock = ({image}) => {
   return (

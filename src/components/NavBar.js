@@ -1,9 +1,9 @@
 import React from 'react';
-import SocialMedia from './SocialMedia';
-import '../css/NavBar.css'
 import {Github, Linkedin, FilePersonFill} from 'react-bootstrap-icons';
 
 const NavBar = () => {
+  const sections = ['Skills', 'Projects', 'Interests'];
+
   const scrollTo = ((id) => {
     console.log(id)
     var target = document.getElementById(id)
@@ -21,15 +21,11 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse"  id="navbarSupportContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li className="nav-item" onClick={()=>{scrollTo('Skills')}}>
-              <a className="nav-link" href="#">Skills</a>
+            {sections.map((section, index) =>
+            <li className="nav-item" onClick={()=>{scrollTo(section)}}>
+              <a className="nav-link" href="#">{section}</a>
             </li>
-            <li className="nav-item" onClick={()=>{scrollTo('Projects')}}>
-              <a className="nav-link" href="#">Projects</a>
-            </li>
-            <li className="nav-item" onClick={()=>{scrollTo('Interest')}}>
-              <a className="nav-link" href="#">Interest</a>
-            </li>
+            )}
           </ul>
           <span className="navbar-text">
             <a href="https://github.com/phok1012" target ='_blank'>

@@ -6,7 +6,7 @@ i{
 }
 
 .skills-tile {
-  color: #617d88;
+  color: var(--icons-color);
   height: 100%;
   width: 75%;
   text-align: center;
@@ -15,8 +15,8 @@ i{
 }
 
 .skills-tile:hover {
-  color: #ffffff;
-  background-color: #617d88;
+  color: var(--background-color);
+  background-color: var(--icons-color);
 }
 
 .skills-tile:hover i {
