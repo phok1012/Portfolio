@@ -2,10 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
+  "hompage": "https://phok1012.github.io/Portfolio/",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.1",
     "style-loader": "^3.3.2",
     "webpack": "^5.82.0",
